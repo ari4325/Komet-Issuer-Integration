@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Komet <> PolygonId</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container-contact100">
+            <div class="wrap-contact100">
+                <div>
+                    <img src="komet_white.png"> <br><br>
+                    <div>
+                        <div>
+                            <div id="did">Your DID: </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="qr_text" style="padding: 5%;">
+                        Scan the QR to verify your assests
+                    </div>
+                    <div>
+                        <div id="qrcode_img"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <script src="verifier.js"></script>
+    </body>
+</html>

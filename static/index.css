@@ -1,0 +1,118 @@
+.buttonGradient{
+  position: relative;
+  width: 327px;
+  height: 52px;
+  background: radial-gradient(100% 100% at 49.85% 0%, #FE73A5 0%, #FE508F 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 4px 12px rgba(254, 92, 151, 0.28);
+  border-radius: 28px;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 4px;
+  gap: 4px;
+
+  background: radial-gradient(137.5% 137.5% at 49.85% 0%, #FE508F 0%, #FE96BC 100%);
+  box-shadow: 0px 4px 12px rgba(254, 92, 151, 0.28);
+  border-radius: 28px;
+}
+
+select{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 4px;
+  gap: 4px;
+
+  background: radial-gradient(137.5% 137.5% at 49.85% 0%, #FE508F 0%, #FE96BC 100%);
+  box-shadow: 0px 4px 12px rgba(254, 92, 151, 0.28);
+  border-radius: 28px;
+
+  
+}
+
+input{
+  width: 343px;
+  height: 48px;
+
+  /* Greyscale/900 */
+
+  background: #100F1F;
+  border-radius: 16px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 5px;
+  /* Body 16/R */
+
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.04em;
+
+  /* Greyscale/500 */
+
+  color: #56508F;
+}
+
+.create { white-space: nowrap; }
+.child { display: inline-block; }
+
+div {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  padding: 2px;
+}
+
+.container-contact100 {
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #100F1F;
+  
+}
+
+.wrap-contact100 {
+  width: 500px;
+  background: #161429;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 42px 55px 45px 55px;
+}
+
+#qrcode_img {
+  background: #fff;
+  margin-left: 40px;
+  padding: 20px;
+  border: 3px dashed var(--dark);
+  border-radius: 30px;
+  height: 350px;
+  width: 350px;
+}

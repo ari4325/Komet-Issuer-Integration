@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Komet <> PolygonId</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+        <link rel="stylesheet" href="claim.css">
+        
+    </head>
+    <body>
+        <div class="container-contact100">
+            <div class="wrap-contact100">
+                <div>
+                    <img src="komet_white.png"> <br><br>
+                    <div>
+                        <div id="did_text">
+                            To obtain claims you have to create a DID
+                        </div>
+                        <div>
+                            <button id="generate_did" class="buttonGradient"><div>Generate DID</div></button>
+                        </div>
+                        <div>
+                            <div id="did">Your DID: </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="sign_msg">
+                        <div id="sign_msg_text">
+                            Sign a message to connect your wallet, such that we can issue a claim for that
+                        </div>
+                        <div>
+                            <button id="wallet_connect" class="buttonGradient"><div>Connect Wallet</div></button>
+                        </div>
+                        <div id="details">
+                            <div id="balance" >
+                                Address:  
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="choice">
+                        <label for="proof_choice">Choose a Proof Type:</label>
+
+                        <select name="proof_choice" id="proof_choice">
+                            <option value="">Default</option>
+                            <option value="holding">Proof Of Komet</option>
+                            <option value="valuation">Proof of Valuation</option>
+                        </select>
+                        <br>
+                        <div id="contract_field">
+                            <div id="bayc_owner">
+                                BAYC Tokens held: 
+                            </div>
+                            <div id="total_valuation">
+                                Total Asset Valuation(in USD): 
+                            </div>
+                            <br>
+                            <button id="create_claim" class="buttonGradient"><div>Create Claim</div></button>
+                        </div>
+                    </div>
+
+
+                    <div id="claim">
+                        <div>
+                            To create a claim with the obtained data click on the button below
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <div id="qr_text">
+                        Scan the QR to add this claim to your wallet (coming soon)
+                    </div>
+                    <div>
+                        <div id="qrcode_img"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <script src="claim.js"></script>
+    </body>
+</html>
