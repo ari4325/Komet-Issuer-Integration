@@ -53,7 +53,7 @@ app.get('/query', async (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log('server running on port 8080');
+    console.log(`server running on port ${port}`);
 });
 
 const requestMap = new Map();
