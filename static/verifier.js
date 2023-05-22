@@ -1,4 +1,4 @@
-const base_url = "http://localhost:8080/";
+const base_url = "http://18.183.117.233:8080/";
 
 window.addEventListener("load", async() => {
     

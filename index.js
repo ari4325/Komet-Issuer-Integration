@@ -57,7 +57,7 @@ const sessionMap = new Map();
 const sessionIdMap = new Map();
 
 async function createProofRequest(req, res) {
-	const hostUrl = "http://localhost:8080";
+	const hostUrl = "http://18.183.117.233:8080";
 	const sessionId = 1;
 	const callbackURL = "/api/callback"
 	const audience = "did:polygonid:polygon:mumbai:2qNSCm5cpWFEpCQajc489c5Mfn92CvBqft71XqFzYN"
@@ -95,7 +95,7 @@ async function createProofRequest(req, res) {
 		// GetQR returns auth request
 async function GetAuthRequest(req,res) {
 	// Audience is verifier id
-	const hostUrl = "http://localhost:8080";
+	const hostUrl = "http://18.183.117.233:8080";
 	const sessionId = crypto.randomBytes(16).toString('base64');
 	const callbackURL = "/api/callback"
 	const audience = "did:polygonid:polygon:mumbai:2qNSCm5cpWFEpCQajc489c5Mfn92CvBqft71XqFzYN"

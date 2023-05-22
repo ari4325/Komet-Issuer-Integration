@@ -1,4 +1,4 @@
-const base_url = "http://localhost:8080/";
+const base_url = "http://18.183.117.233:8080/";
 
 var qrcode_img = document.getElementById('qrcode_img');
 var qr = new QRCode(qrcode_img);

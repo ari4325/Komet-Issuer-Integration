@@ -1,4 +1,4 @@
-const base_url = "http://localhost:8080/";
+const base_url = "http://18.183.117.233:8080/";
 
 let sessionId;
 window.onload = () => {
@@ -36,7 +36,7 @@ async function updateUI() {
     const data = await resp.json();
     if (data.session != null) {
         const endpoint = `/claim?sessionId=${sessionId}`;
-        window.open("http://192.168.115.50:8080"+endpoint, "_self");
+        window.open("http://10.12.22.94:8080"+endpoint, "_self");
     }
 }
 
