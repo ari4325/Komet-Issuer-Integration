@@ -84,7 +84,10 @@ async function createProofRequest(req, res) {
 			},
 		},
 	};
-	const scope = request.body.scope ?? [];
+	let scope = [];
+	if(request.body.scope) {
+		scope = request.body.scope
+	}
 	request.body.scope = [...scope, proofRequest];
 
 	requestMap.set(`${sessionId}`, request);
