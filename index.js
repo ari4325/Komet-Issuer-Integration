@@ -5,7 +5,7 @@ const getRawBody = require('raw-body')
 var crypto = require('crypto');
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.use(express.static('static'));
 app.set('views', path.join(__dirname, 'views'))
@@ -31,6 +31,10 @@ app.get('/claim', async(req, res) => {
 
 app.get('/verify', (req, res) => {
 	res.render('verifier');
+})
+
+app.get('/', async(req, res) => {
+	res.status(200).send({"verified": true});
 })
 
 app.get('/session', async (req, res) => {
