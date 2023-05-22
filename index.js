@@ -126,7 +126,7 @@ async function Callback(req,res) {
 
 	const ethURL = 'https://polygon-mumbai.infura.io/v3/cf0f0659fb084ae2bc6f502039078311';
 	const contractAddress = "0x134B1BE34911E39A8397ec6289782989729807a4"
-	const keyDIR = "../keys"
+	const keyDIR = "./keys"
 
 	const ethStateResolver = new resolver.EthStateResolver(
 		ethURL,

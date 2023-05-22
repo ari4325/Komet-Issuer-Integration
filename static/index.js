@@ -36,7 +36,7 @@ async function updateUI() {
     const data = await resp.json();
     if (data.session != null) {
         const endpoint = `/claim?sessionId=${sessionId}`;
-        window.open("http://10.12.22.94:8080"+endpoint, "_self");
+        window.open("http://18.183.117.233:8080"+endpoint, "_self");
     }
 }
 
